@@ -1,6 +1,3 @@
-/* -----------------------------
-   ESTILOS GENERALES
------------------------------ */
 :root {
     --color-primario: #1db918;
     --color-secundario: #50E3C2;
@@ -12,7 +9,6 @@
     --transicion: 0.3s ease;
 }
 
-/* Fondo de imagen añadido */
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
     background: 
@@ -24,9 +20,6 @@ body {
     color: var(--color-texto);
 }
 
-/* -----------------------------
-   CONTENEDOR CENTRAL
------------------------------ */
 .contenedor {
     background: rgba(255, 255, 255, 0.88);
     backdrop-filter: blur(4px);
@@ -54,9 +47,6 @@ h4, h2, h3 {
     text-align: center;
 }
 
-/* -----------------------------
-   FORMULARIOS
------------------------------ */
 form label {
     display: block;
     font-weight: bold;
@@ -78,9 +68,6 @@ input:focus {
     box-shadow: 0 0 5px var(--color-primario);
 }
 
-/* -----------------------------
-   BOTONES
------------------------------ */
 button {
     width: 100%;
     padding: 12px;
@@ -99,7 +86,6 @@ button:hover {
     background: #1db918;
 }
 
-/* Botones secundarios */
 .boton-secundario {
     background: #555;
 }
@@ -108,9 +94,6 @@ button:hover {
     background: #333;
 }
 
-/* -----------------------------
-   ENLACES
------------------------------ */
 a {
     color: var(--color-primario);
     font-weight: bold;
@@ -120,9 +103,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* -----------------------------
-   HEADER (botón de desconectar)
------------------------------ */
 header {
     width: 100%;
     padding: 10px;
@@ -145,9 +125,6 @@ header button:hover {
     background: #e6e6e6;
 }
 
-/* -----------------------------
-   TARJETAS DE MASCOTAS
------------------------------ */
 .grid-mascotas {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -177,9 +154,6 @@ header button:hover {
     margin-bottom: 10px;
 }
 
-/* -----------------------------
-   PANTALLA DE AGRADECIMIENTO
------------------------------ */
 #mensajeAgradecimiento {
     font-size: 24px;
     color: var(--color-primario);

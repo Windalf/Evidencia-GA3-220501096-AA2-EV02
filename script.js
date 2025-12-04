@@ -1,7 +1,3 @@
-// ---------------------------
-// FUNCIONES DE UTILIDAD
-// ---------------------------
-
 function guardarUsuario(usuario) {
     localStorage.setItem("usuarioRegistrado", JSON.stringify(usuario));
 }
@@ -26,10 +22,6 @@ function desconectar() {
     cerrarSesion();
     window.location.href = "index.html";
 }
-
-// ---------------------------
-// REGISTRO
-// ---------------------------
 
 if (document.getElementById("formularioRegistro")) {
     document.getElementById("formularioRegistro").addEventListener("submit", function(e) {
@@ -60,10 +52,6 @@ if (document.getElementById("formularioRegistro")) {
     });
 }
 
-// ---------------------------
-// INICIO DE SESIÓN
-// ---------------------------
-
 if (document.getElementById("formularioInicio")) {
     document.getElementById("formularioInicio").addEventListener("submit", function(e) {
         e.preventDefault();
@@ -86,10 +74,6 @@ if (document.getElementById("formularioInicio")) {
         }
     });
 }
-
-// ---------------------------
-// LISTA DE MASCOTAS
-// ---------------------------
 
 const mascotas = [
     { nombre: "Luna", descripcion: "Perra cariñosa y tranquila.", imagen: "img//perro1.jpg" },
@@ -122,10 +106,6 @@ function seleccionarMascota(indice) {
     window.location.href = "confirmar.html";
 }
 
-// ---------------------------
-// CONFIRMAR ADOPCIÓN
-// ---------------------------
-
 if (document.getElementById("infoMascota")) {
     let mascota = JSON.parse(localStorage.getItem("mascotaSeleccionada"));
     let div = document.getElementById("infoMascota");
@@ -144,10 +124,6 @@ function confirmarAdopcion() {
 function cancelarAdopcion() {
     window.location.href = "mascotas.html";
 }
-
-// ---------------------------
-// PANTALLA DE AGRADECIMIENTO
-// ---------------------------
 
 if (document.getElementById("mensajeAgradecimiento")) {
     let usuario = obtenerUsuario();
